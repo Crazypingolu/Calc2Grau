@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calc2Grau</string>
+    <string name="num_a">Digite a</string>
+    <string name="num_b">Digite b</string>
+    <string name="num_c">Digite c</string>
+    <string name="raiz1">raíz 1:</string>
+    <string name="raiz2">raíz 2:</string>
+    <string name="aviso">Aviso:</string>
+    <string name="verificar">Verificar</string>
+</resources>

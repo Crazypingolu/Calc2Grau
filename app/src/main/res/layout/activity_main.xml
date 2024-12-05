@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etNumA"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="67dp"
+        android:ems="10"
+        android:hint="@string/num_a"
+        android:inputType="numberSigned|numberDecimal"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNumB"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/num_b"
+        android:inputType="numberSigned|numberDecimal"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintStart_toStartOf="@+id/etNumA"
+        app:layout_constraintTop_toBottomOf="@+id/etNumA" />
+
+    <EditText
+        android:id="@+id/etNumC"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/num_c"
+        android:inputType="numberSigned|numberDecimal"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintStart_toStartOf="@+id/etNumB"
+        app:layout_constraintTop_toBottomOf="@+id/etNumB" />
+
+    <Button
+        android:id="@+id/btnVerificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/verificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumC" />
+
+    <TextView
+        android:id="@+id/tvRaiz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRaiz2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRaiz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="167dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAvisos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:textColor="#D90C0C"
+        app:layout_constraintBottom_toTopOf="@+id/tvRaiz1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
